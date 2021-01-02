@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useHttp } from '../hooks/http.hook'
 import { useMessage } from '../hooks/message.hook';
-import {AuthContext} from '../context/AuthContext'
+import { AuthContext } from '../context/AuthContext'
 
 export const AuthPage = () => {
 
@@ -18,6 +18,9 @@ export const AuthPage = () => {
         clearError()
     }, [error, message, clearError])
 
+    useEffect(() => {
+        window.M.updateTextFields()
+    }, [])
 
     const changeHandler = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
