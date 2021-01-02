@@ -1,5 +1,6 @@
 {
     "port": 5000,
     "mongoURI": "mongodb+srv://RomaZherko:1234@cluster0.zbepq.mongodb.net/mern?retryWrites=true&w=majority",
-    "jwtSecret": "RomaZherko"
+    "jwtSecret": "RomaZherko",
+    "baseUrl": "http://localhost:5000"
 }
